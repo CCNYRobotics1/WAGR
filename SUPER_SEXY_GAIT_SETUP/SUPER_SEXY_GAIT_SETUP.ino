@@ -1,13 +1,5 @@
 #include <Servo.h>
 #include <time.h>
-// set the names of the servos
-/*
-hip11 = front right hip
-knee1 = front right knee
-hip21 = front left hip
-knee2 = front left knee
-
-*/
 
 Servo hip11;  
 Servo hip21; 
@@ -18,11 +10,11 @@ Servo knee2;
 Servo knee3;
 Servo knee4;
 
+enum jointList {knee1, knee2, knee3, knee4, hip11, hip21, hip31, hip41, tell};
+
 void setup()
 {
-  //pinMode(13, OUTPUT);  // LED pin
-  // assign servos to pins and center servos
-  srand (time(NULL));
+  srand (time(NULL)); //Useful for randomizing movements of limbs
   hip11.attach(7); 
   hip21.attach(5);
   hip31.attach(4);   
@@ -33,25 +25,47 @@ void setup()
   knee3.attach(3);
   knee4.attach(2);
   
-  {
-    knee3.write(115); //Stand(115) Reach (50)
-    knee4.write(120); //Stand 95, Reach 145   
-    knee2.write(90); // Stand(75) Reach (180-165)
-    knee1.write(70); // Stand(90) Reach(0-15)
+  int k1,k2,k3,k4,h1,h2,h3,h4,h5; //k's are knee positions, h's are hip positions.
+  //Initial Posterior State
+  k1=70; k2=90; k3=115; k4=120
+  h1=100; h2=80; h3=120; h4=60;
+  
+  knee3.write(k3); //Stand(115) Reach (50)
+  knee4.write(k4); //Stand 95, Reach 145   
+  knee2.write(k2); // Stand(75) Reach (180-165)
+  knee1.write(k1); // Stand(90) Reach(0-15)
 
-    //hip11.write(100); // Foward(15) Side(100)
-    //hip21.write(80);  //Side(79), Forward(170)
-    hip31.write(120);  // Side 120
-    hip41.write(60); //Side 80, 
+  hip11.write(h1); // Foward(15) Side(100)
+  hip21.write(h2);  //Side(79), Forward(170)
+  hip31.write(h3);  // Side 120
+  hip41.write(h4); //Side 80, 
     
-    }
+   
     
 }
 
+void preCheck() {//makes sure all ports and components are attached and accounted for.
+  int i;
+  jointList frame = knee1;
+  for ( i = frame; i<tell; i++) {
+    i.attached();
+    while(i.attached()== TRUE) {
+      continue;}
+    else break;
+    }
+  }
+
+int sRead(const char&) { //This function enables for developers to read angle of servos. Useful for visuallizing movements by playing around with the values.
+  //README: to read knee#: input sRead(1#). to read hip#: input sRead(2#)
+  int port = f
+  switch(port) {
+    case 1:
+    angle = 
+    }
+  }
 
 
-void slowga() {
-  int k = rand() % 100 + 40;
+void slowga() { //delay function to see the movements better.
   delay(120);
   }
 
@@ -195,97 +209,4 @@ void loop()
 
 
 
-
-
-/*Code Graveyard/Recycle Bin:
- * 
- * 
- * void LimbTread() 
-{
-  int i,k;
-  for (i=0;i<116;i++) {
-    k=i;
-    hip11.write(k);
-    hip21.write(k+50);
-    hip31.write(k+100);
-    hip41.write(k-10);
-    knee1.write(k-10);
-    knee2.write(k+40);
-    knee4.write(k+40);
-    knee3.write(k+10);
-    rest();
-  }
-}
-
-void LimbTread2()
-{
-  int i,f;
-  for (i=0;i<60;i++) {
-    f=70-i;
-    hip11.write(f);
-    hip21.write(f+10);
-    hip31.write(f+100);
-    hip41.write(f-10);
-    knee1.write(f-10);
-    knee2.write(f+40);
-    knee3.write(f+10);
-    knee4.write(f+40);
-    rest();
-  }
-}
-
-void Right() {
-  knee2.write(80);
-  knee3.write(70);
-  knee1.write(90);
-  knee4.write(120);
-  }
-  
-void rest() {
-  delay(5);
-  }
-
-void sleep() {
-  hip11.write(15);
-  hip21.write(170);
-  hip31.write(50);
-  hip41.write(160);
-  knee1.write(140);
-  knee2.write(30);
-  knee3.write(140);
-  knee4.write(60);
-  }
-
-void kill() {
-  hip11.write(120);
-  hip21.write(79);
-  hip31.write(120);
-  hip41.write(80);
-  knee1.write(15);
-  knee2.write(160);
-  knee3.write(30);
-  knee4.write(150);
-  
-  }
-
- void swipeLimb1() {
-
-  int i;
-  for (i=0; i<90; i++) {
-    hip11.write(i+20);
-    knee1.write((i/2)+20);
-  }
-}
-
-void swipeLimb2() {
-
-  int i,k;
-  for (i=0; i<90; i++) {
-    k=-i;
-    hip11.write(k+20);
-    knee1.write((k/2)+20);
-  }
-}
-
-*/
 
