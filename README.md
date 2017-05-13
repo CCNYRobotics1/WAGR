@@ -1,8 +1,10 @@
 # WAGR
 Wall Avoiding Gait Robot (WAGR - pronounced wager)
 
+## Current Phase: 
+Designing gait algorithm for directional movement. 
 
-
+##
 An intermediate-hard level of the famous Wall Avoiding Robot/Obstacle Avoiding robot.
 
 WAR is designed to perform basic obstacle detection and avoidance with the design focused on wheels/motors. The hard part in the project is the hardware. But in the <b>WAGR</b>, both the hardware and software can exponentially complex compared to WAR.
