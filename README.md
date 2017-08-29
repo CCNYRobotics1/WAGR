@@ -16,9 +16,9 @@ WAR is designed to perform basic obstacle detection and avoidance with the desig
 `Designing gait algorithm for directional movement. `
 
 ## - Hardware Overview
-<b>WAGR</b> is a step up in that it uses `~~8~~` servo motors: 4 for hip joints, 4 for knee joints and 4 claw joints. Design is based on 4 limbs with `~~2~~` now 3 degrees of freedom per limb (sweep for hip, raise movement for knee, reach movement for extremeties). This is arguably a more difficult setup than if you use a hexapod design (6 limbs, 2 degrees of freedom per limb: 2 servos per limb).
+<b>WAGR</b> is a step up in that it uses ~~8~~ servo motors: 4 for hip joints, 4 for knee joints and 4 claw joints. Design is based on 4 limbs with ~~2~~ now 3 degrees of freedom per limb (sweep for hip, raise movement for knee, reach movement for extremeties). This is arguably a more difficult setup than if you use a hexapod design (6 limbs, 2 degrees of freedom per limb: 2 servos per limb).
 
-`~~A more easier design would be to add 1 more degree of freedom in our current <b>WAGR</b>. Add a raise servo to the entire limb to make it easier to design the gait movement of the bot.~~` Now rectified.
+~~A more easier design would be to add 1 more degree of freedom in our current <b>WAGR</b>. Add a raise servo to the entire limb to make it easier to design the gait movement of the bot.~~ Now rectified.
 
 The whole project is mainly 3D printed parts. Link to the specific parts: 
 
