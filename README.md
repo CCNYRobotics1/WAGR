@@ -12,7 +12,7 @@
 Wall Avoiding Gait Robot (WAGR - pronounced wager)
 
 ## Current Phase: 
-'Designing gait algorithm for directional movement. '
+`Designing gait algorithm for directional movement. `
 
 ##
 An intermediate-hard level of the famous Wall Avoiding Robot/Obstacle Avoiding robot.
