@@ -75,3 +75,14 @@ void setup()
 }
 ```
 And you're ready to configure your bot to move.
+
+### Tweaking/Testing the Servos
+After instantiating the servos, you can test if the servos work as intended by typing:
+```C
+void loop() {
+  a1.write(90);
+  }
+```
+#### Quick Tip:
+You can change the value and adjust the angle before putting the pieces together. This way you are less likely to run into "cramping" issues where the limb bends in the wrong direction.
+
