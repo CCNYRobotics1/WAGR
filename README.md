@@ -9,15 +9,13 @@
 7) Learning the Arduino IDE
 
 # WAGR
-Wall Avoiding Gait Robot (WAGR - pronounced wager)
+Wall Avoiding Gait Robot (WAGR - pronounced wager).
+An intermediate-hard level of the famous Wall Avoiding Robot/Obstacle Avoiding robot.
+
+WAR is designed to perform basic obstacle detection and avoidance with the design focused on wheels/motors. The hard part in the project is figuring out how the movement works. But in the <b>WAGR</b>, both the hardware and software can exponentially complex compared to WAR.
 
 ## Current Phase: 
 `Designing gait algorithm for directional movement. `
-
-##
-An intermediate-hard level of the famous Wall Avoiding Robot/Obstacle Avoiding robot.
-
-WAR is designed to perform basic obstacle detection and avoidance with the design focused on wheels/motors. The hard part in the project is . But in the <b>WAGR</b>, both the hardware and software can exponentially complex compared to WAR.
 
 ### Hardware Design
 <b>WAGR</b> is a step up in that it uses 8 servo motors: 4 for hip joints and 4 for knee joints. Design is based on 4 limbs with `previously 2` now 3 degrees of freedom per limb (sweep for hip, raise movement for knee, reach movement for extremeties). This is arguably a more difficult setup than if you use a hexapod design (6 limbs, 2 degrees of freedom per limb: 2 servos per limb).
