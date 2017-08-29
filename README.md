@@ -1,6 +1,5 @@
 # Table of Contents
 
-`
 1) Description
 2) Current Phase
 3) Hardware Overview
@@ -8,7 +7,7 @@
 5) Hardware Design
 6) Software Design
 7) Learning the Arduino IDE
-`
+
 # WAGR
 Wall Avoiding Gait Robot (WAGR - pronounced wager)
 
