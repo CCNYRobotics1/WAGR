@@ -1,8 +1,19 @@
+# Table of Contents
+
+`
+1) Description
+2) Current Phase
+3) Hardware Overview
+4) Sorfware Overview
+5) Hardware Design
+6) Software Design
+7) Learning the Arduino IDE
+`
 # WAGR
 Wall Avoiding Gait Robot (WAGR - pronounced wager)
 
 ## Current Phase: 
-Designing gait algorithm for directional movement. 
+'Designing gait algorithm for directional movement. '
 
 ##
 An intermediate-hard level of the famous Wall Avoiding Robot/Obstacle Avoiding robot.
