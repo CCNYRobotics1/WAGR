@@ -76,7 +76,7 @@ void setup()
 ```
 And you're ready to configure your bot to move.
 
-### Tweaking/Testing the Servos
+### x Tweaking/Testing the Servos
 After instantiating the servos, you can test if the servos work as intended by typing:
 ```C
 void loop() {
